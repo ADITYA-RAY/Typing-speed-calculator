@@ -11,25 +11,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <title>Typerr</title>
-    <style>
-        @media screen and (max-width:900px){
-            .show{
-            display: none;
-            }
-        }
-        @media screen and (min-width:900px){
-            .notshow{
-            display: none;
-            }
-        }
-        
-    </style>
+ 
 </head>
 
 <body style="background-color: rgb(27, 27, 27);">
-    <div class="notshow">
-        <h1 style="color: white;text-align: center; padding: 20px;">This Webapp is only available on Desktop</h1>
-    </div>
+    
     
     <div class="show">
     <center><h2 style="color: rgb(218, 218, 218);">Typerr.</h2></center>
@@ -54,7 +40,7 @@
     <div class="container" style="margin-top: 24px;height: 100%;">
         <div class="row">
             <div class="col-lg-8">
-                <textarea id="text" rows="18" style="padding:20px; width: 100%;" onkeypress="change()"></textarea>
+                <textarea id="text" rows="18" style="padding:20px; width: 100%;" onkeydown="change()"></textarea>
             </div>
             <div class="col-lg-4">
                 <div class="card">

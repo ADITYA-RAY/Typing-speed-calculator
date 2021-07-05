@@ -10,10 +10,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <title>Typerr</title>>
+    <title>Typerr</title>
+    <style>
+        @media screen and (max-width:900px){
+            .show{
+            display: none;
+            }
+        }
+        @media screen and (min-width:900px){
+            .notshow{
+            display: none;
+            }
+        }
+        
+    </style>
 </head>
 
 <body style="background-color: rgb(27, 27, 27);">
+    <div class="notshow">
+        <h1 style="color: white;text-align: center; padding: 20px;">This Webapp is only available on Desktop</h1>
+    </div>
+    
+    <div class="show">
     <center><h2 style="color: rgb(218, 218, 218);">Typerr.</h2></center>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -180,6 +198,7 @@
 
 
     </script>
+    </div>
 </body>
 
 </html>
